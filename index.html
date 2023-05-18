@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCss</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.3.0/remixicon.css"
+        integrity="sha512-0JEaZ1BDR+FsrPtq5Ap9o05MUwn8lKs2GiCcRVdOH0qDcUcCoMKi8fDVJ9gnG8VN1Mp/vuWw2sMO0SQom5th4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+
+<body>
+
+    <!-- navbar section -->
+    <nav class="container mx-auto p-6">
+        <div class="flex item-center justify-between">
+            <div>
+                <img src="dist/Images/logo-light.png" alt="Tailwind Logo" width="200px">
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-slate-900 hover:text-yellow-500">Portfolio</a>
+                <a href="#" class="text-slate-900 hover:text-yellow-500">About</a>
+                <a href="#" class="text-slate-900 hover:text-yellow-500">Contact</a>
+                <a href="#" class="text-slate-900 hover:text-yellow-500">Social</a>
+                <a href="#" class="py-1 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-900">Call Me</a>
+            </div>
+
+            <button id="mobile-btn" type="button" class="md:hidden">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu"
+                class="absolute flex hidden flex-col bg-gray-50 py-8 left-6 right-6 items-center space-y-2 font-bold drop-shadow-lg border-gray-300">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Social</a>
+                <a href="#">Portfolio</a>
+                <a href="#" class="py-1 px-6 rounded-full text-white bg-orange-500 hover:bg-slate-900">Call Me</a>
+
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section -->
+
+
+    <!-- hero section -->
+    <div class="container flex flex-col-reverse md:flex-row mx-auto px-8 space-x-6">
+        <div class="md:w-1/2 flex flex-col space-y-6 pt-5  text-center md:text-start justify-center text-slate-900">
+            <h1 class="font-bold text-xl md:text-5xl">Rapidly build modern websites without ever leaving your HTML.
+            </h1>
+            <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can
+                be
+                composed to build any design, directly in your markup.Get started Quick search...Ctrl K</p>
+            <a href="#"
+                class="py-1 px-6 self-center md:self-start rounded-full text-white bg-orange-500 hover:bg-slate-900">Call
+                Me</a>
+
+        </div>
+        <div class="md:w-1/2">
+            <img src="dist/Images/undraw.svg" alt="">
+        </div>
+    </div>
+    <!-- hero section -->
+
+
+    <!-- author section -->
+    <section id="author">
+        <div class="container px-5 mx-auto my-6 md:my-32 text-center">
+            <h2 class="font-bold text-2xl md:text-4xl">“Best practices” don’t actually work.</h2>
+            <p class="mt-8 max-w-5xl mx-auto">I’ve written a few thousand words on why traditional “semantic class
+                names” are the reason
+                CSS is hard to maintain, but the truth is you’re never going to believe me until you actually try it. If
+                you
+                can suppress the urge to retch long enough to give it a chance, I really think you’ll wonder how you
+                ever
+                worked with CSS any other way.
+            </p>
+            <div style="height: 50px;"></div>
+            <div class="mt-6 flex flex-col md:flex-row md:space-x-5 md:space-y-0 space-x-0  space-y-5">
+                <div
+                    class="md:w-1/3 bg-slate-100 flex flex-col items-center p-6 space-y-2 rounded-lg border border-slate-200 hover:bg-slate-200">
+                    <img src="dist/Images/Eyad.jpeg" alt="Adam" class="w-16 rounded-full -mt-14">
+                    <h5 class="font-bold text-lg text-slate-900">Eyad Jafar</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facilis
+                        perspiciatis saepe a,
+                        nisi voluptatibus repudiandae nisi voluptatibus repudiandae.
+                    </p>
+                </div>
+
+                <div
+                    class="md:w-1/3 bg-slate-100 flex flex-col items-center p-6 space-y-2 rounded-lg border border-slate-200 hover:bg-slate-200">
+                    <img src="dist/Images/ryan-florence.3af9c9d9.jpg" alt="Adam" class="w-16 rounded-full -mt-14">
+                    <h5 class="font-bold text-lg text-slate-900">Adam Sandlar</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facilis
+                        perspiciatis saepe a,
+                        nisi voluptatibus repudiandae nisi voluptatibus repudiandae.
+                    </p>
+                </div>
+
+                <div
+                    class="md:w-1/3 bg-slate-100 flex flex-col items-center p-6 space-y-2 rounded-lg border border-slate-200 hover:bg-slate-200">
+                    <img src="dist/Images/guillermo-rauch.8a24ab88.jpg" alt="Adam" class="w-16 rounded-full -mt-14">
+                    <h5 class="font-bold text-lg text-slate-900">Guillermo Rauch</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facilis
+                        perspiciatis saepe a,
+                        nisi voluptatibus repudiandae nisi voluptatibus repudiandae.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- author section -->
+
+
+    <div class="bg-orange-500">
+        <div class="container mx-auto">
+            <div class="flex md:flex-row flex-col py-8 space-y-6 justify-between px-6 items-center">
+                <div>
+                    <div>
+                        <h1 class="font-bold text-white md:text-3xl ext-1xl">Move even faster with Tailwind UI.</h1>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <a href="#" class="py-1 px-6 rounded-full bg-white  hover:bg-slate-900 text-orange-500 hover:text-white">Call Me</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="bg-slate-900">
+        <div
+            class="container justify-between mx-auto flex flex-col md:flex-row  text-white px-5 py-10 space-y-8 md:space-y-0 flex-col-reverse">
+
+            <div class="flex flex-col items-center justify-between space-y-12 md:space-y-2 md:items-start">
+                <div class="text-center mt-6 md:mt-0 block md:hidden">
+                    Copyright &copy; 2023, All Right Reserved
+                </div>
+                <div>                    
+                    <img src="dist/Images/logo-light.png" alt="Logo" class="w-32">                
+                    <div class="h-7"></div>
+                    <a href="#" aria-label="Read more about Seminole tax hike">
+                        <i class="ri-facebook-box-fill text-3xl"></i>
+                    </a>
+
+                    <a href="#" aria-label="Read more about Seminole tax hike">
+                        <i class="ri-google-fill text-3xl"></i>
+                    </a>
+                    <a href="#" aria-label="Read more about Seminole tax hike">
+                        <i class="ri-youtube-fill text-3xl"></i>
+                    </a>
+                    <a href="#" aria-label="Read more about Seminole tax hike">
+                        <i class="ri-linkedin-box-fill text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="flex space-x-32 mx-auto">
+
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class=":hover:text-slate-300">
+                        Home
+                    </a>
+                    <a href="#" class=":hover:text-slate-300">
+                        About
+                    </a>
+                    <a href="#" class=":hover:text-slate-300">
+                        Contact
+                    </a>
+                </div>
+
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class=":hover:text-slate-300">
+                        Imprint
+                    </a>
+                    <a href="#" class=":hover:text-slate-300">
+                        Privacy
+                    </a>
+                    <a href="#" class=":hover:text-slate-300">
+                        Credits
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <div class="flex space-x-3">
+                        <input type="text" placeholder="subscribe to newsletter"
+                            class="flex-1 py-2 px-6 rounded-full text-orange-500">
+                        <button type="submit"
+                            class="bg-orange-500 rounded-full px-4 py-2 hover:bg-slate-500">Go</button>
+                    </div>
+                </form>
+
+                <div class="hidden md:block">
+                    Copyright &copy; 2023, All Right Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+
+    <script src="dist/js/index.js"></script>
+</body>
+
+</html>
